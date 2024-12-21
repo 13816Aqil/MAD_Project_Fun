@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SUI_Gas">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout1"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUI GAS COMPLAIN BOX"
+                android:textSize="33dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address:"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/suiemailet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/suispinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+
+                android:textAlignment="center"
+                android:background="@drawable/spinner_background"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Complain Box:"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/suiChatBox"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColorHint="#BCBCBC"
+                android:textColor="@color/black"
+                android:hint="Write your detailed application here..."
+                android:gravity="start|top"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:scrollbars="vertical"
+                android:padding="8dp" />
+            <Button
+                android:id="@+id/btn_start_voice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Listening"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:padding="12dp"
+                android:background="@drawable/baseline_record_voice_over_24"
+                android:elevation="5dp"/>
+
+            <Button
+                android:id="@+id/suicaptureButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capture Photo" />
+
+            <ImageView
+                android:id="@+id/suicapturedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Captured image"
+                android:background="@color/white"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/suisubmitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
